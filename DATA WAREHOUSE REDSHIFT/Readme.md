@@ -23,7 +23,7 @@ It is residing on S3
 # How to run the notebook
 
 * I have used the IAC notebook to create the cluster programmatically from the jupyter notebook.
-* First create an IAM "adminaccess" role and note down the access key and secret key. Put these key in **dwh.cfg** file
+* First create an IAM "adminaccess" role and note down the access key and secret key. Put these key in **dwh.cfg** file.
 
 
 # Queries ran on query editor to check the tables
