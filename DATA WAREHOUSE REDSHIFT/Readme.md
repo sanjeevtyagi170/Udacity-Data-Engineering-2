@@ -15,12 +15,15 @@ It is residing on S3
 
 # Schema Design
 
-### Tables have been created based on the below schema from staging tables in Redshift
+### Fact and Dimension tables have been created based on the below schema design from staging tables in Redshift.
 <center>
 <img style="float: center;height:500px;" src="Schema_Design.jpg"><br><br>
 </center>
 
+# How to run the notebook
 
+* I have used the IAC notebook to create the cluster from the jupyter notebook.
+* First create an IAM "adminaccess" role and note down the access key and secret key.
 
 
 # Queries ran on query editor to check the tables
