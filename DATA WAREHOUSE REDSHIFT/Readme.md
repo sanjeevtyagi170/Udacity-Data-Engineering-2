@@ -22,7 +22,7 @@ It is residing on S3
 
 # How to run the notebook
 
-* I have used the IAC notebook to create the cluster programmatically from the jupyter notebook.
+* I have used the IAC notebook to create the cluster programmatically and have used jupyter notebook **Redshift_test.ipynb**.
 * First create an IAM "adminaccess" role and note down the **access and secret key**. Put these values in **dwh.cfg** file.
 * Then start executing each cell of the notebook and run all cells till cluster creation. After cluster gets created.
 * Check the status of the cluster if it is available and note down the **ARN & Endpoint**.Again put these values in **dwh.cfg** file.
