@@ -10,11 +10,12 @@ It is residing on S3
 * Song data: s3://udacity-dend/song_data
 * Log data: s3://udacity-dend/log_data
 * Log data json path: s3://udacity-dend/log_json_path.json
-## Data is present in JSON format. So, Appropriate Reshift queries have been applied. The data from the S3 buckets is to loaded into staging area in Redshift.
+### Data is present in JSON format. So, Appropriate Reshift queries have been applied. 
+### The data from the S3 buckets is to loaded into staging area in Redshift.
 
 # Schema Design
 
-## Star schema tables are to created from staging tables in Redshift
+### Tables have been created based on the below schema from staging tables in Redshift
 <center>
 <img style="float: center;height:500px;" src="Schema_Design.jpg"><br><br>
 </center>
