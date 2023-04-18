@@ -1,6 +1,6 @@
 ## Schema Design
 <center>
-<img style="float: center;height:350px;" src="Schema_Design.jpg"><br><br>
+<img style="float: center;height:500px;" src="Schema_Design.jpg"><br><br>
 </center>
 
 
