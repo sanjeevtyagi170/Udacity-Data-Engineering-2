@@ -5,6 +5,11 @@ A music streaming startup, Sparkify, has grown their user base and song database
 In this project, we will create an ETL pipeline that will extract raw data from s3 and load into staging tables on Redshift.
 Then from these Staging Tables a star schema DW will be created on Redshift.
 
+# Input data 
+It is residing in S3 buckets
+* s3://udacity-dend/song_data
+* s3://udacity-dend/log_data
+
 ## Schema Design
 <center>
 <img style="float: center;height:500px;" src="Schema_Design.jpg"><br><br>
