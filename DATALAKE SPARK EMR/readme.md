@@ -1,22 +1,29 @@
 
-# Project Data Warehouse
+# Project Data Lake
 ## Project Overview
-A music streaming startup, Sparkify, has grown their user base and song database and want to move their processes and data onto the cloud.
+A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake.
 
-In this project, we will create an ETL pipeline that will extract raw data from s3 and load into staging tables on Redshift.
-Then from these Staging Tables a star schema DW will be created on Redshift.
+In this project, we will create pipeline script in pyspark that will extract raw data from s3 data lake (JSON) and process the in AWS EMR.
+After processing this data will be stored in S3 data lake as parquet files.
 
 # Input data 
-It is residing on S3
+Data residing on S3 data lake
 * Song data: s3://udacity-dend/song_data
 * Log data: s3://udacity-dend/log_data
-* Log data json path: s3://udacity-dend/log_json_path.json
-### Data is present in JSON format. So, Appropriate Reshift queries have been applied. 
-### The data from the S3 buckets is to loaded into staging area in Redshift.
+# Output data
+* Songs : s3://udacity-dend-output/songs
+* users : s3://udacity-dend-output/users
+* artists : s3://udacity-dend-output/artists
+* songplays : s3://udacity-dend-output/songplays
+* time : s3://udacity-dend-output/time
+
+### Data is present in JSON format.  
+### Output data will be in Parquet format.
+### AWS EMR is being used to process this big data.
 
 # Schema Design
 
-### Fact and Dimension tables have been created based on the below schema design from staging tables in Redshift.
+### Parquet files have been created based on the below schema design.(Parquet files can be queried easily)
 <center>
 <img style="float: center;height:400px;" src="Schema_Design.jpg"><br><br>
 </center>
@@ -51,6 +58,4 @@ It is residing on S3
 <center>
 <img style="float: center;height:700px;" src="query3a.png"><br><br>
 </center>
-<center>
-<img style="float: center;height:700px;" src="query3b.png"><br><br>
-</center>
+
