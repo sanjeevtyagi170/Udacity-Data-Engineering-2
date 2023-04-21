@@ -42,17 +42,19 @@ Data residing on S3 data lake
 <img style="float: center;height:400px;" src="Schema_Design.jpg"><br><br>
 </center>
 
-# How to run the notebook
-
-* I have used the IAC notebook to create the cluster programmatically and have used jupyter notebook **Redshift_test.ipynb**.
-* First create an IAM **adminaccess** role and note down the **access and secret key**. Put these values in **dwh.cfg** file.
-* Then start executing each cell of the notebook and run all cells till cluster creation. After cluster gets created.
-* Check the status of the cluster if it is available. Note down the **ARN & Endpoint**. Again put these values in **dwh.cfg** file.
-* Then run the **!python3 create_tables.py** to drop and create the tables.
-* Then run **!python3 etl.py** to create the tables in the redshift.
-* Run some queries on **Query Editor**.
-* Finally delete the cluster.
-
+# How to run the Python File
+## 1
+ * create the S3 storage for output
+ * Create an IAM **adminaccess** role and note down the **access and secret key**. Put these values in **dwh.cfg** file.
+ * Create an EMR cluster from AWS console. Follow the steps provided.
+ * Use the command to run the file "python etl.py"
+ * Finally delete the cluster.
+## 2
+ * create the S3 storage for output 
+ * Create an EMR cluster from AWS console. Follow the steps provided.
+ * Create a notebook.
+ * Copy the code from etl.py and run in the notebook.(No need for access key and spark initialization)
+ * Finally delete the cluster.
 
 # EMR Notebook Snapshots
 # Code starts running on EMR Notebook
