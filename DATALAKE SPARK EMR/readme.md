@@ -40,20 +40,20 @@ Data residing on S3 data lake
 * Finally delete the cluster.
 
 
-# Queries ran on query editor to check the tables
-# Query 1 -  No of male and female users
+# EMR Notebook Snapshots
+# Code starts running on EMR Notebook
 
 <center>
 <img style="float: center;height:700px;" src="query1.png"><br><br>
 </center>
 
-# Query 2 - Find data whose song duration is greater than 100 in the year 2004 and title startswith "M"
+# Songs folder created on S3
 
 <center>
 <img style="float: center;height:700px;" src="query2.png"><br><br>
 </center>
 
-# Query 3 - Shows the population of all the tables
+# Data started getting populated in S3 in songs Folder
 
 <center>
 <img style="float: center;height:700px;" src="query3a.png"><br><br>
