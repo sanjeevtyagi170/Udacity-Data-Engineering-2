@@ -43,18 +43,18 @@ Data residing on S3 data lake
 </center>
 
 # How to run the Python File
-## 1
+## 1. Through SSH
  * create the S3 storage for output
  * Create an IAM **adminaccess** role and note down the **access and secret key**. Put these values in **dwh.cfg** file.
- * Create an EMR cluster from AWS console. Follow the steps provided.
- * Use the command to run the file "python etl.py"
- * Finally delete the cluster.
-## 2
+ * Create an EMR cluster from AWS console. Follow the steps provided in the FAQ section to connect to EMR Cluster through SSH.
+ * Use the command to run the file "spark-submit etl.py"
+ * Finally delete the cluster and S3 storage.
+## 2. Through Notebook
  * create the S3 storage for output 
  * Create an EMR cluster from AWS console. Follow the steps provided.
  * Create a notebook.
  * Copy the code from etl.py and run in the notebook.(No need for access key and spark initialization)
- * Finally delete the cluster.
+ * Finally delete the cluster and S3 storage.
 
 # EMR Notebook Snapshots
 # Code starts running on EMR Notebook
