@@ -37,7 +37,7 @@ Data residing on S3 data lake
 
 # Schema Design
 
-### Parquet files have been created based on the below schema design.(Parquet files can be queried easily)
+### Parquet files have been created based on the below schema design.
 <center>
 <img style="float: center;height:400px;" src="Schema_Design.jpg"><br><br>
 </center>
