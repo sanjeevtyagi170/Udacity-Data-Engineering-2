@@ -19,7 +19,7 @@ Data residing on S3 data lake
     ##### log_data/2018/11/2018-11-12-events.json
   * LOG JSON File Contents
 <center>
-<img style="float: center;height:400px;" src="log_data.jpg"><br><br>
+<img style="float: center;height:400px;" src="log-data.jpg"><br><br>
 </center> 
 # Output data
 * Songs : s3://udacity-dend-output/songs
