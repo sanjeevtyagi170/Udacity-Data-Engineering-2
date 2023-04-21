@@ -3,8 +3,8 @@
 ## Project Overview
 A music streaming startup, Sparkify, has grown their user base and song database even more and want to move their data warehouse to a data lake.
 
-In this project, we will create pipeline script in pyspark that will extract raw data from s3 data lake (JSON) and process the in AWS EMR.
-After processing this data will be stored in S3 data lake as parquet files.
+In this project, we will create a script/pipeline in pyspark that will extract raw data from s3 data lake (JSON) and process those files in AWS EMR.
+After processing, this data will be stored in S3 data lake as parquet files.
 
 # Input data 
 Data residing on S3 data lake
