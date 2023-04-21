@@ -18,7 +18,7 @@ It is residing on S3
 
 ### Fact and Dimension tables have been created based on the below schema design from staging tables in Redshift.
 <center>
-<img style="float: center;height:500px;" src="Schema_Design.jpg"><br><br>
+<img style="float: center;height:400px;" src="Schema_Design.jpg"><br><br>
 </center>
 
 # How to run the notebook
