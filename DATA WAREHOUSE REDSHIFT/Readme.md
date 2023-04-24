@@ -18,6 +18,10 @@ Data residing on S3 data lake
     ##### log_data/2018/11/2018-11-12-events.json
   * LOG JSON File Contents
 
+ <center>
+ <img style="float: center;height:400px;" src="log-data.png"><br><br>
+ </center>
+
 ### Data is present in JSON format. So, Appropriate Reshift queries have been applied. 
 ### The data from the S3 buckets is to loaded into staging area in Redshift.
 
