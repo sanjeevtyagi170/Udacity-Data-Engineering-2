@@ -6,10 +6,18 @@ In this project, we will create an ETL pipeline that will extract raw data from 
 Then from these Staging Tables a star schema DW will be created on Redshift.
 
 # Input data 
-It is residing on S3
+Data residing on S3 data lake
 * Song data: s3://udacity-dend/song_data
+  * SONG JSON File
+    ##### song_data/A/B/C/TRABCEI128F424C983.json
+  * SONG JSON File Contents
+    ##### {"num_songs": 1, "artist_id": "ARJIE2Y1187B994AB7", "artist_latitude": null, "artist_longitude": null, "artist_location": "", "artist_name": "Line Renaud", "song_id": "SOUPIRU12A6D4FA1E1", "title": "Der Kleine Dompfaff", "duration": 152.92036, "year": 0}
+
 * Log data: s3://udacity-dend/log_data
-* Log data json path: s3://udacity-dend/log_json_path.json
+  * LOG JSON File
+    ##### log_data/2018/11/2018-11-12-events.json
+  * LOG JSON File Contents
+
 ### Data is present in JSON format. So, Appropriate Reshift queries have been applied. 
 ### The data from the S3 buckets is to loaded into staging area in Redshift.
 
